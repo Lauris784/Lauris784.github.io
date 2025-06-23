@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>OVER DROP</title>
+    <meta charset="UTF-8">
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #1a0033;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        .btn {
+            background: #7000ff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 10px;
+            margin: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>🎮 OVER DROP</h1>
+    <button class="btn" onclick="Telegram.WebApp.expand()">Открыть кейсы</button>
+    
+    <script>
+        // Инициализация WebApp
+        const tg = window.Telegram.WebApp;
+        tg.MainButton.setText("Мой баланс: 1000").show();
+    </script>
+</body>
+</html>
